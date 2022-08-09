@@ -1,0 +1,46 @@
+/* Grid section*/
+
+.container-home {
+  display: grid;
+  grid-template-areas: 
+  'main photo photo photo photo'
+  'button photo photo photo photo';
+  height: 90vh;
+  margin-top: 3em;
+}
+
+.mainSection {
+  grid-area: main;
+  padding: 3vh 0;
+}
+
+.btnSection {
+  margin: 0;
+  padding: 0;
+  grid-area: button;
+}
+
+.photoSection {
+  grid-area: photo;
+  background-image: url(../../assets/halfLife.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto 100%;
+}
+
+/*Text*/
+
+.headerText {
+  color: #F5C156;
+}
+
+
+/*Resposive*/
+@media (max-width: 1024px) {
+  .photoSection {
+    display:none;
+  }
+  .mainSection {
+    width: 70vw;
+  }
+}

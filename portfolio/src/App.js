@@ -11,7 +11,7 @@ import Contact from "./views/Contact";
 function App() {
   return (
     <>
-  <div className="App">
+  <div className="App bg-white">
       <Header />
       <Routes>
       <Route path="/" element={<Home />}/>

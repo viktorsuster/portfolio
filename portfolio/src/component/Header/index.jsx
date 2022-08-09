@@ -10,7 +10,7 @@ const Header = () => {
       <Logo />
       </div>
       <div className="right">
-      <Navbar />
+      <Navbar brand="main" />
       </div>
       </header>
   )
